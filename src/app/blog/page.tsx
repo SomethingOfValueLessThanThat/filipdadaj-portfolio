@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>idk</div>;
+  return <div>kiwi</div>;
 }

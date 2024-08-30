@@ -37,9 +37,10 @@ export default function NavTabs() {
   }, [emblaApi, onSelect]);
 
   const navItems = [
-    { href: "/", label: "PROJECTS", emoji: "&#128736;" },
-    { href: "/about", label: "ABOUT ME", emoji: "&#128104;&#8205;&#128188;" },
+    { href: "/", label: "ABOUT ME", emoji: "&#128104;&#8205;&#128188;" },
+    { href: "/projects", label: "PROJECTS", emoji: "&#128736;" },
     { href: "/work-setup", label: "WORK SETUP", emoji: "&#129716;" },
+    { href: "/playlist", label: "PLAYLIST", emoji: "&#127926;" },
     { href: "/blog", label: "PERSONAL BLOG", emoji: "&#9999;&#65039;" },
   ];
 

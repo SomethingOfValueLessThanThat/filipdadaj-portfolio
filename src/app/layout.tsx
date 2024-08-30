@@ -1,14 +1,23 @@
-import PageTransition from "@/components/layout/page-transition";
+// Nextjs
 import type { Metadata } from "next";
+
+// Styles CSS
 import "@/styles/globals.css";
 import "@/styles/font-fix.css";
+
+// Utility Functions
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/lib/font-config";
-import { ThemeProvider } from "@/components/ui/theme-provider";
+
+// Layout Components
 import { Header } from "@/components/layout/header";
 import { SubHeader } from "@/components/layout/sub-header";
-import NavTabs from "@/components/layout/nav-tabs";
 import { Footer } from "@/components/layout/footer";
+import PageTransition from "@/components/layout/page-transition";
+import NavTabs from "@/components/layout/nav-tabs";
+
+// UI Components
+import { ThemeProvider } from "@/components/ui/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,7 +47,7 @@ export default function RootLayout({
           <SubHeader />
           <NavTabs />
           <PageTransition>
-            <main className="w-full max-w-xl	mx-auto px-8">{children}</main>
+            <main className="w-full max-w-xl mx-auto px-8">{children}</main>
           </PageTransition>
           <Footer />
         </ThemeProvider>

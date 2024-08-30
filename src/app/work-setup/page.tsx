@@ -22,22 +22,24 @@ const Section: React.FC<SectionProps> = ({ title, items }) => (
   </div>
 );
 
-export default function Home() {
+export default function WorkSetup() {
   return (
     <section className="space-y-3">
       <h3 className="font-bold text-xl text-pretty">
         Software I use, gadgets I love, and other things I can recommend.
       </h3>
-      <Image
-        src={setup}
-        alt="setup"
-        className="w-full aspect-video object-cover rounded-xl pointer-events-none"
-      />
       <p className="text-pretty">
         Here are the things I use to build software, stay productive, or buy to
         fool myself into thinking I’m being productive when I’m really just
         procrastinating. Here’s a big list of all of my favorite stuff.
       </p>
+      <div className="bg-[#F3F3F3] w-full aspect-video rounded-xl">
+        <Image
+          src={setup}
+          alt="setup"
+          className="w-full aspect-video object-cover rounded-xl pointer-events-none"
+        />
+      </div>
       {workSetupData.map((section, index) => (
         <Section key={index} title={section.title} items={section.items} />
       ))}

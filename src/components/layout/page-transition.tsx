@@ -24,8 +24,7 @@ export default function PageTransition({
           key={pathname}
           initial={{ opacity: 0, filter: "blur(10px)" }}
           animate={{ opacity: 1, filter: "blur(0px)" }}
-          transition={{ duration: 0.5 }}
-          className="kiwi"
+          transition={{ duration: 0.6 }}
         >
           {children}
         </motion.div>

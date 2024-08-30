@@ -13,7 +13,7 @@ export function SubHeader() {
         className="rounded-[32px] pointer-events-none"
       />
       <div className="inline-flex items-center gap-2">
-        <h1 className="font-bold text-2xl">Filip Dadaj</h1>
+        <h1 className="font-bold text-[32px]">Filip Dadaj</h1>
         <CheckMark />
       </div>
       <p className="text-center">
