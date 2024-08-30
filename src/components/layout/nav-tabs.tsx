@@ -12,6 +12,8 @@ export default function NavTabs() {
     align: "start",
     dragFree: true,
   });
+  const [canScrollPrev, setCanScrollPrev] = React.useState(false);
+  const [canScrollNext, setCanScrollNext] = React.useState(false);
   const pathname = usePathname();
 
   const scrollPrev = React.useCallback(() => {
@@ -21,6 +23,18 @@ export default function NavTabs() {
   const scrollNext = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
+
+  const onSelect = React.useCallback(() => {
+    if (!emblaApi) return;
+    setCanScrollPrev(emblaApi.canScrollPrev());
+    setCanScrollNext(emblaApi.canScrollNext());
+  }, [emblaApi]);
+
+  React.useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
+    onSelect();
+  }, [emblaApi, onSelect]);
 
   const navItems = [
     { href: "/", label: "PROJECTS", emoji: "&#128736;" },
@@ -46,34 +60,38 @@ export default function NavTabs() {
           ))}
         </div>
       </div>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#F3F3F3] dark:border-[#373737] hover:bg-background"
-        onClick={scrollPrev}
-      >
-        <ChevronLeft
-          size={16}
-          strokeWidth={4}
-          color="#999999"
-          absoluteStrokeWidth={true}
-          className="translate-x-[-1px]"
-        />
-      </Button>
-      <Button
-        variant="outline"
-        size="icon"
-        className="absolute right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#F3F3F3] dark:border-[#373737] hover:bg-background"
-        onClick={scrollNext}
-      >
-        <ChevronRight
-          size={16}
-          strokeWidth={4}
-          color="#999999"
-          absoluteStrokeWidth={true}
-          className="translate-x-[1px]"
-        />
-      </Button>
+      {canScrollPrev && (
+        <Button
+          variant="outline"
+          size="icon"
+          className="absolute left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#F3F3F3] dark:border-[#373737] hover:bg-background"
+          onClick={scrollPrev}
+        >
+          <ChevronLeft
+            size={16}
+            strokeWidth={4}
+            color="#999999"
+            absoluteStrokeWidth={true}
+            className="translate-x-[-1px]"
+          />
+        </Button>
+      )}
+      {canScrollNext && (
+        <Button
+          variant="outline"
+          size="icon"
+          className="absolute right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#F3F3F3] dark:border-[#373737] hover:bg-background"
+          onClick={scrollNext}
+        >
+          <ChevronRight
+            size={16}
+            strokeWidth={4}
+            color="#999999"
+            absoluteStrokeWidth={true}
+            className="translate-x-[1px]"
+          />
+        </Button>
+      )}
     </div>
   );
 }
