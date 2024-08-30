@@ -52,9 +52,12 @@ export default function NavTabs() {
               <Button
                 className={`${pathname === item.href ? "bg-[#DEDEDE] dark:bg-[#373737]" : ""}`}
               >
-                <span>{item.label}</span>
+                <span className="translate-y-[1px]">{item.label}</span>
                 <span className="w-1" />
-                <span dangerouslySetInnerHTML={{ __html: item.emoji }} />
+                <span
+                  className="text-xs"
+                  dangerouslySetInnerHTML={{ __html: item.emoji }}
+                />
               </Button>
             </Link>
           ))}

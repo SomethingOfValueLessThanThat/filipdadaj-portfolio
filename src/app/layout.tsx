@@ -1,3 +1,4 @@
+import PageTransition from "@/components/layout/page-transition";
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import "@/styles/font-fix.css";
@@ -7,6 +8,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Header } from "@/components/layout/header";
 import { SubHeader } from "@/components/layout/sub-header";
 import NavTabs from "@/components/layout/nav-tabs";
+import { Footer } from "@/components/layout/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +24,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "flex flex-col min-h-screen bg-background font-sans text-sm text-foreground antialiased",
           fontSans.variable,
         )}
       >
@@ -35,7 +37,10 @@ export default function RootLayout({
           <Header />
           <SubHeader />
           <NavTabs />
-          <main className="max-w-xl	mx-auto px-8">{children}</main>
+          <PageTransition>
+            <main className="w-full max-w-xl	mx-auto px-8">{children}</main>
+          </PageTransition>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

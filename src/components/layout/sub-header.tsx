@@ -4,7 +4,7 @@ import CheckMark from "@/assets/svgs/check-mark";
 
 export function SubHeader() {
   return (
-    <div className="flex flex-col gap-8 items-center max-w-xl mx-auto px-8">
+    <div className="flex flex-col gap-8 items-center w-full max-w-xl mx-auto px-8">
       <Image
         src={profilePicture}
         alt="profile picture"
@@ -24,11 +24,10 @@ export function SubHeader() {
         <br />
         <br />⚡ UI/UX DESIGNER
         <br />
-        <br />✅ NextJs // Tailwind CSS // Zed code editor
+        <br />✅ Nextjs // Tailwind CSS // Zed code editor
         <br />
         <br />
-        I’m driven by optimism and a<br />
-        passion for building cool stuff
+        I’m driven by optimism and <br />a passion for building cool stuff
         <br />
         <br />
         LET’S CODE SOME MAGIC!
