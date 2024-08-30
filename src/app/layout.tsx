@@ -6,7 +6,7 @@ import { fontSans } from "@/lib/font-config";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { Header } from "@/components/layout/header";
 import { SubHeader } from "@/components/layout/sub-header";
-import { NavTabs } from "@/components/layout/nav-tabs";
+import NavTabs from "@/components/layout/nav-tabs";
 
 export const metadata: Metadata = {
   title: "Create Next App",
