@@ -68,7 +68,7 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#EEEEEE] dark:border-[#373737] hover:bg-background"
+          className="absolute left-5 xs:left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#EEEEEE] dark:border-[#373737] hover:bg-background"
           onClick={scrollPrev}
         >
           <ChevronLeft
@@ -84,7 +84,7 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#EEEEEE] dark:border-[#373737] hover:bg-background"
+          className="absolute right-5 xs:right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#EEEEEE] dark:border-[#373737] hover:bg-background"
           onClick={scrollNext}
         >
           <ChevronRight
