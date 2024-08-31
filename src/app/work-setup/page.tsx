@@ -33,7 +33,7 @@ export default function WorkSetup() {
         fool myself into thinking I’m being productive when I’m really just
         procrastinating. Here’s a big list of all of my favorite stuff.
       </p>
-      <div className="bg-[#F3F3F3] w-full aspect-video rounded-2xl">
+      <div className="bg-[#EEEEEE] w-full aspect-video rounded-2xl">
         <Image
           src={setup}
           alt="setup"
