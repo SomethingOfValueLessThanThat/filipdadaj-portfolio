@@ -3,21 +3,23 @@ import type { Metadata } from "next";
 
 // Styles CSS
 import "@/styles/globals.css";
-import "@/styles/font-fix.css";
 
 // Utility Functions
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/lib/font-config";
 
-// Layout Components
-import { Header } from "@/components/layout/header";
-import { SubHeader } from "@/components/layout/sub-header";
-import { Footer } from "@/components/layout/footer";
-import PageTransition from "@/components/layout/page-transition";
-import NavTabs from "@/components/layout/nav-tabs";
+// Globals Components
+import { Header } from "@/components/globals/header";
+import { SubHeader } from "@/components/globals/sub-header";
+import { Footer } from "@/components/globals/footer";
+import NavTabs from "@/components/globals/nav-tabs";
 
-// UI Components
-import { ThemeProvider } from "@/components/ui/theme-provider";
+// Transition Components
+import PageTransition from "@/components/transition/page-transition";
+
+// Layout Components
+import { ThemeProvider } from "@/components/layout/theme-provider";
+import { VaulDrawerWrapper } from "@/components/layout/vaul-drawer-wrapper";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,7 +35,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "flex flex-col min-h-screen bg-background font-sans text-sm text-foreground antialiased",
+          "min-h-screen bg-background font-sans text-sm text-foreground antialiased",
           fontSans.variable,
         )}
       >
@@ -43,13 +45,17 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <SubHeader />
-          <NavTabs />
-          <PageTransition>
-            <main className="w-full max-w-xl mx-auto px-8">{children}</main>
-          </PageTransition>
-          <Footer />
+          <VaulDrawerWrapper>
+            <Header />
+            <SubHeader />
+            <NavTabs />
+            <PageTransition>
+              <main className="w-full max-w-xl mx-auto px-5 xs:px-8">
+                {children}
+              </main>
+            </PageTransition>
+            <Footer />
+          </VaulDrawerWrapper>
         </ThemeProvider>
       </body>
     </html>

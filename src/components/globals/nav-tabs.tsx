@@ -45,13 +45,13 @@ export default function NavTabs() {
   ];
 
   return (
-    <div className="relative w-full max-w-xl mx-auto p-8">
+    <div className="relative w-full max-w-xl mx-auto p-5 xs:p-8">
       <div className="overflow-hidden rounded-xl" ref={emblaRef}>
         <div className="flex gap-2">
           {navItems.map((item) => (
             <Link href={item.href} key={item.href}>
               <Button
-                className={`${pathname === item.href ? "bg-[#DEDEDE] dark:bg-[#373737]" : ""}`}
+                className={`${pathname === item.href ? "bg-[#DEDEDE] dark:bg-[#373737] !opacity-100" : ""}`}
               >
                 <span className="translate-y-[1px]">{item.label}</span>
                 <span className="w-1" />

@@ -11,14 +11,10 @@ const config = {
   ],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
+      screens: {
+        xs: "412px",
+      },
       fontFamily: {
         sans: ["var(--font-sans)"],
       },

@@ -4,7 +4,7 @@ import CheckMark from "@/assets/svgs/check-mark";
 
 export function SubHeader() {
   return (
-    <div className="flex flex-col gap-8 items-center w-full max-w-xl mx-auto px-8">
+    <div className="flex flex-col gap-8 items-center w-full max-w-xl mx-auto px-5 xs:px-8">
       <Image
         src={profilePicture}
         alt="profile picture"
@@ -13,7 +13,7 @@ export function SubHeader() {
         className="rounded-[32px] pointer-events-none"
       />
       <div className="inline-flex items-center gap-2">
-        <h1 className="font-bold text-[32px]">Filip Dadaj</h1>
+        <h1 className="font-bold text-[32px] tracking-tight">Filip Dadaj</h1>
         <CheckMark />
       </div>
       <p className="text-center">
