@@ -51,9 +51,9 @@ export default function NavTabs() {
           {navItems.map((item) => (
             <Link href={item.href} key={item.href}>
               <Button
-                className={`${pathname === item.href ? "bg-[#CCCCCC] dark:bg-[#373737] !opacity-100" : ""}`}
+                className={`${pathname === item.href ? "bg-iron-100 dark:bg-iron-500" : ""}`}
               >
-                <span className="translate-y-[1px]">{item.label}</span>
+                <span>{item.label}</span>
                 <span className="w-1" />
                 <span
                   className="text-xs"
@@ -68,15 +68,14 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-5 xs:left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#EEEEEE] dark:border-[#373737] hover:bg-background"
+          className="absolute left-5 xs:left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-background"
           onClick={scrollPrev}
         >
           <ChevronLeft
             size={16}
             strokeWidth={4}
-            color="#999999"
+            className="text-iron-200 -translate-x-px"
             absoluteStrokeWidth={true}
-            className="translate-x-[-1px]"
           />
         </Button>
       )}
@@ -84,15 +83,14 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-5 xs:right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-[#EEEEEE] dark:border-[#373737] hover:bg-background"
+          className="absolute right-5 xs:right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-background"
           onClick={scrollNext}
         >
           <ChevronRight
             size={16}
             strokeWidth={4}
-            color="#999999"
+            className="text-iron-200 translate-x-px"
             absoluteStrokeWidth={true}
-            className="translate-x-[1px]"
           />
         </Button>
       )}

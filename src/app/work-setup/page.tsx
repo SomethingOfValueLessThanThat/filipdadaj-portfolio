@@ -14,7 +14,7 @@ const Section: React.FC<SectionProps> = ({ title, items }) => (
     {items.map((item, index) => (
       <div key={index} className="gap-2 space-y-2">
         <h4 className="text-base font-bold">{item.name}</h4>
-        <p className="text-xs text-neutral-500 dark:text-neutral-400">
+        <p className="text-xs text-neutral-500 dark:text-neutral-400 text-pretty">
           {item.description}
         </p>
       </div>
@@ -33,7 +33,7 @@ export default function WorkSetup() {
         fool myself into thinking I’m being productive when I’m really just
         procrastinating. Here’s a big list of all of my favorite stuff.
       </p>
-      <div className="bg-[#EEEEEE] w-full aspect-video rounded-2xl">
+      <div className="bg-iron-50 w-full aspect-video rounded-2xl">
         <Image
           src={setup}
           alt="setup"

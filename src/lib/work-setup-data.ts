@@ -15,7 +15,7 @@ export const workSetupData: SectionProps[] = [
       {
         name: "Macbook Pro M1 Pro 16GB RAM (2021)",
         description:
-          "I was using an windows based pc prior to this and the difference is night and day. I've never heard the fans turn on a single time, even under the incredibly heavy loads I put it through with our various situations.",
+          "The new MacBook Pro is a game-changer. It’s seamless performance and incredible battery life make even the most demanding tasks feel effortless. The display is stunning, with vibrant colors and crisp detail. It's the perfect companion for anyone serious about their craft.",
       },
       {
         name: "DELL Ultrasharp U2520D",

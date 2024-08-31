@@ -22,16 +22,14 @@ export function ModeToggle() {
           <Sun
             size={16}
             strokeWidth={2}
-            color="#999999"
+            className="text-iron-200 scale-100 transition-all dark:scale-0"
             absoluteStrokeWidth={true}
-            className="scale-100 transition-all dark:scale-0"
           />
           <MoonStar
             size={16}
             strokeWidth={2}
-            color="#999999"
+            className="text-iron-200 absolute scale-0 transition-all dark:scale-100"
             absoluteStrokeWidth={true}
-            className="absolute scale-0 transition-all dark:scale-100"
           />
           <span className="sr-only">Toggle theme</span>
         </Button>
