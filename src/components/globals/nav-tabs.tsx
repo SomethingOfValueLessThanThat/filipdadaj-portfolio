@@ -5,6 +5,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import PinkSketch from "@/assets/svgs/pink-sketch";
+import PinkNote from "@/assets/svgs/pink-note";
 
 export default function NavTabs() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -46,12 +48,12 @@ export default function NavTabs() {
 
   return (
     <div className="relative w-full max-w-xl mx-auto p-5 xs:p-8">
-      <div className="overflow-hidden rounded-xl" ref={emblaRef}>
+      <div className="overflow-x-clip rounded-xl px-px" ref={emblaRef}>
         <div className="flex gap-2">
           {navItems.map((item) => (
             <Link href={item.href} key={item.href}>
               <Button
-                className={`${pathname === item.href ? "bg-iron-100 dark:bg-iron-500" : ""}`}
+                className={`relative ${pathname === item.href ? "hover:shadow-none" : "[&>div]:hidden"}`}
               >
                 <span>{item.label}</span>
                 <span className="w-1" />
@@ -59,6 +61,12 @@ export default function NavTabs() {
                   className="text-xs"
                   dangerouslySetInnerHTML={{ __html: item.emoji }}
                 />
+                <div className="absolute pointer-events-none">
+                  <PinkSketch />
+                </div>
+                <div className="absolute left-3 -top-4 scale-110 pointer-events-none z-20">
+                  <PinkNote />
+                </div>
               </Button>
             </Link>
           ))}

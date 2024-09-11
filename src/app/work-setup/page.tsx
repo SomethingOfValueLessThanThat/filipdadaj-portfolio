@@ -1,6 +1,18 @@
+"use client";
+
+import * as React from "react";
 import Image from "next/image";
-import setup from "@/assets/images/setup.jpeg";
+import setupSide from "@/assets/images/setup-side.jpeg";
+import setupFar from "@/assets/images/setup-far.jpg";
+import setupFancy from "@/assets/images/setup-fancy.jpg";
 import { workSetupData } from "@/lib/work-setup-data";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 
 // Define the types for the SectionProps
 interface SectionProps {
@@ -23,6 +35,36 @@ const Section: React.FC<SectionProps> = ({ title, items }) => (
 );
 
 export default function WorkSetup() {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
+  const images = [
+    {
+      src: setupSide,
+      alt: "pc setup from the side",
+    },
+    {
+      src: setupFar,
+      alt: "pc setup from far away",
+    },
+    {
+      src: setupFancy,
+      alt: "setup fancy shot on torus light",
+    },
+  ];
+
   return (
     <section className="space-y-3">
       <h3 className="font-bold text-xl text-pretty">
@@ -33,12 +75,41 @@ export default function WorkSetup() {
         fool myself into thinking I’m being productive when I’m really just
         procrastinating. Here’s a big list of all of my favorite stuff.
       </p>
-      <div className="bg-iron-50 w-full aspect-video rounded-2xl">
-        <Image
-          src={setup}
-          alt="setup"
-          className="w-full aspect-video object-cover rounded-2xl pointer-events-none"
-        />
+      <div className="w-full">
+        <Carousel
+          setApi={setApi}
+          className="w-full rounded-2xl overflow-hidden"
+        >
+          <CarouselContent>
+            {images.map((image, index) => (
+              <CarouselItem key={index}>
+                <div className="relative aspect-video overflow-hidden rounded-2xl bg-iron-50">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+        <div className="py-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={cn(
+                "inline-block h-3 w-3 mx-1 border-2 rounded-full transition-colors",
+                index === current
+                  ? "border-iron-300 dark:border-iron-50"
+                  : "border-iron-100 dark:border-iron-200",
+              )}
+              onClick={() => api?.scrollTo(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
       {workSetupData.map((section, index) => (
         <Section key={index} title={section.title} items={section.items} />
