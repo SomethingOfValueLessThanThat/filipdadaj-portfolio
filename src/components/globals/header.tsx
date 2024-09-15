@@ -45,7 +45,7 @@ export function Header() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button size="icon" className="mr-2">
+        <Button size="icon">
           <Github
             size={16}
             strokeWidth={2}

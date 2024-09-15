@@ -32,10 +32,10 @@ export default function Projects() {
 
   return (
     <section className="space-y-3">
-      <h3 className="font-bold text-xl text-pretty">
+      <h1 className="font-bold text-xl text-pretty">
         Building digital worlds, one line of code at a time, shaping dreams into
         pixels.
-      </h3>
+      </h1>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>

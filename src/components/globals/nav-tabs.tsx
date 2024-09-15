@@ -85,6 +85,7 @@ export default function NavTabs() {
             className="text-iron-200 -translate-x-px"
             absoluteStrokeWidth={true}
           />
+          <span className="sr-only">Navigation to the left</span>
         </Button>
       )}
       {canScrollNext && (
@@ -100,6 +101,7 @@ export default function NavTabs() {
             className="text-iron-200 translate-x-px"
             absoluteStrokeWidth={true}
           />
+          <span className="sr-only">Navigation to the right</span>
         </Button>
       )}
     </div>
