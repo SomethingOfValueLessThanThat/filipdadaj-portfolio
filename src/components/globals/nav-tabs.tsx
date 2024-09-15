@@ -48,7 +48,7 @@ export default function NavTabs() {
 
   return (
     <div className="relative w-full max-w-xl mx-auto p-5 xs:p-8">
-      <div className="overflow-x-clip rounded-xl px-px" ref={emblaRef}>
+      <div className="overflow-x-clip rounded-xl" ref={emblaRef}>
         <div className="flex gap-2">
           {navItems.map((item) => (
             <Link href={item.href} key={item.href}>
@@ -64,7 +64,7 @@ export default function NavTabs() {
                 <div className="absolute pointer-events-none">
                   <PinkSketch />
                 </div>
-                <div className="absolute left-3 -top-4 scale-110 pointer-events-none z-20">
+                <div className="absolute left-3 -top-4 scale-110 pointer-events-none">
                   <PinkNote />
                 </div>
               </Button>

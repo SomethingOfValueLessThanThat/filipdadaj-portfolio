@@ -20,6 +20,7 @@ import PageTransition from "@/components/transition/page-transition";
 // Layout Components
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { VaulDrawerWrapper } from "@/components/layout/vaul-drawer-wrapper";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -56,6 +57,7 @@ export default function RootLayout({
             </PageTransition>
             <Footer />
           </VaulDrawerWrapper>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

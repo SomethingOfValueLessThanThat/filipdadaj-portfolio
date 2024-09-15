@@ -5,6 +5,7 @@ import Image from "next/image";
 import setupSide from "@/assets/images/setup-side.jpeg";
 import setupFar from "@/assets/images/setup-far.jpg";
 import setupFancy from "@/assets/images/setup-fancy.jpg";
+import setupFront from "@/assets/images/setup-front.jpg";
 import { workSetupData } from "@/lib/work-setup-data";
 import {
   Carousel,
@@ -54,6 +55,10 @@ export default function WorkSetup() {
     {
       src: setupSide,
       alt: "pc setup from the side",
+    },
+    {
+      src: setupFront,
+      alt: "setup fancy shot on torus light",
     },
     {
       src: setupFar,

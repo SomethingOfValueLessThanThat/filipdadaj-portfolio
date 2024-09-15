@@ -16,9 +16,9 @@ const buttonVariants = cva(
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         linkHoverIn:
-          "relative !p-0 after:absolute after:bg-primary after:bottom-2 after:h-px after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300",
+          "relative !p-0 after:absolute after:bg-primary after:bottom-2 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300",
         linkHoverOut:
-          "relative !p-0 after:absolute after:bg-primary after:bottom-2 after:h-px after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300",
+          "relative !p-0 after:absolute after:bg-primary after:bottom-2 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
