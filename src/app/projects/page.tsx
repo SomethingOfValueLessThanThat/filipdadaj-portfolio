@@ -122,7 +122,7 @@ export default function Projects() {
               <CredenzaTrigger asChild>
                 <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
-                    src={uiUxPismoletka}
+                    src={uiUxPismoletkaXl}
                     alt="web based saas platform for touch typing"
                     fill
                     className="object-cover"
@@ -151,7 +151,7 @@ export default function Projects() {
               <CredenzaTrigger asChild>
                 <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
-                    src={uiUxTnyli}
+                    src={uiUxTnyliXl}
                     alt="web based app for shortening urls"
                     fill
                     className="object-cover"
@@ -191,7 +191,7 @@ export default function Projects() {
               <CredenzaTrigger asChild>
                 <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
-                    src={renderLamborghini}
+                    src={renderLamborghiniXl}
                     alt="web based saas platform for touch typing"
                     fill
                     className="object-cover"
@@ -216,7 +216,7 @@ export default function Projects() {
               <CredenzaTrigger asChild>
                 <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
-                    src={workbenchLamborghiny}
+                    src={workbenchLamborghinyXl}
                     alt="web based saas platform for touch typing"
                     fill
                     className="object-cover"
@@ -258,7 +258,7 @@ export default function Projects() {
                 <CredenzaBody className="p-0">
                   <div className="relative w-full aspect-video overflow-hidden rounded-xl">
                     <Image
-                      src={renderGpu}
+                      src={renderGpuXl}
                       alt="web based saas platform for touch typing preview"
                       fill
                       className="object-cover"
@@ -272,7 +272,7 @@ export default function Projects() {
               <CredenzaTrigger asChild>
                 <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
-                    src={workbenchGpu}
+                    src={workbenchGpuXl}
                     alt="web based saas platform for touch typing"
                     fill
                     className="object-cover"
