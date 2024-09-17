@@ -1,19 +1,24 @@
 "use client";
 
+// Nextjs
 import * as React from "react";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
+
+// Images
 import setupSide from "@/assets/images/setup-side.jpeg";
 import setupFar from "@/assets/images/setup-far.jpg";
 import setupFancy from "@/assets/images/setup-fancy.jpg";
 import setupFront from "@/assets/images/setup-front.jpg";
 import { workSetupData } from "@/lib/work-setup-data";
+
+// Globals Components
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   type CarouselApi,
 } from "@/components/ui/carousel";
-import { cn } from "@/lib/utils";
 
 // Define the types for the SectionProps
 interface SectionProps {

@@ -1,6 +1,9 @@
 "use client";
 
+// Nextjs
 import { useTheme } from "next-themes";
+
+// Syntax Highlighter
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
   oneLight,

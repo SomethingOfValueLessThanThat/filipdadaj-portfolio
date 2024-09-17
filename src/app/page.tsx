@@ -1,4 +1,7 @@
+// Nextjs
 import Image from "next/image";
+
+// Images
 import aboutBartender from "@/assets/images/about-bartender.jpg";
 import aboutHiking from "@/assets/images/about-hiking.jpg";
 import aboutMe from "@/assets/images/about-me.jpg";

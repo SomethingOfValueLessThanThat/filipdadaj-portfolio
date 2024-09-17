@@ -1,6 +1,12 @@
 "use client";
 
+// Nextjs
 import { useState } from "react";
+
+// Icons
+import { Github, MailPlus } from "lucide-react";
+
+// Globals Components
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import {
@@ -16,8 +22,6 @@ import {
 } from "@/components/ui/credenza";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-
-import { Github, MailPlus } from "lucide-react";
 
 export function Header() {
   const [contactMethod, setContactMethod] = useState("option-one");

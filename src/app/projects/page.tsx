@@ -1,13 +1,14 @@
 "use client";
+// Nextjs
+import Image from "next/image";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+// Hooks
 import { useToast } from "@/hooks/use-toast";
+
+// Icons
 import { Box, Brush, CodeXml, File, Move3D } from "lucide-react";
+
+// Images
 import uiUxPismoletkaXl from "@/assets/images/ui-ux-pismoletka-xl.jpg";
 import uiUxTnyliXl from "@/assets/images/ui-ux-tnyli-xl.jpg";
 import renderLamborghiniXl from "@/assets/images/render-lamborghini-xl.jpg";
@@ -17,7 +18,14 @@ import workbenchGpuXl from "@/assets/images/workbench-gpu-xl.jpg";
 import printerBase from "@/assets/images/printer-base.jpeg";
 import printerDragon from "@/assets/images/printer-dragon.jpeg";
 import printerTurtle from "@/assets/images/printer-turtle.jpeg";
-import Image from "next/image";
+
+// Globals Components
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import {
   Credenza,
   CredenzaBody,

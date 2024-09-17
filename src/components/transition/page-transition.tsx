@@ -1,8 +1,11 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { usePathname } from "next/navigation";
+// Nextjs
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+
+// Framer motion
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function PageTransition({
   children,

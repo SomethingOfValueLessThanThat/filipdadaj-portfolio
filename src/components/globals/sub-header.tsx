@@ -1,5 +1,10 @@
+// Nextjs
 import Image from "next/image";
+
+// Images
 import profilePicture from "@/assets/images/profile-picture.png";
+
+// Icons
 import CheckMark from "@/assets/svgs/check-mark";
 
 export function SubHeader() {

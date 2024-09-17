@@ -1,12 +1,22 @@
 "use client";
+
+// Nextjs
 import * as React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Button } from "@/components/ui/button";
+
+// Icons
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// Slider
+import useEmblaCarousel from "embla-carousel-react";
+
+// Images
 import PinkSketch from "@/assets/svgs/pink-sketch";
 import PinkNote from "@/assets/svgs/pink-note";
+
+// Globals Componets
+import { Button } from "@/components/ui/button";
 
 export default function NavTabs() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
