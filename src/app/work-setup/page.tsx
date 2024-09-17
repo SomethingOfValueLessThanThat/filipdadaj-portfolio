@@ -23,10 +23,10 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ title, items }) => (
   <div className="relative mt-16 space-y-8 sm:border-l border-neutral-200 dark:border-neutral-700 sm:pl-36 max-sm:pt-12">
-    <p className="absolute sm:left-4 sm:top-[3px] text-xs">{title}</p>
+    <h4 className="absolute sm:left-4 sm:top-[3px] text-xs">{title}</h4>
     {items.map((item, index) => (
-      <div key={index} className="gap-2 space-y-2">
-        <h4 className="text-base font-bold">{item.name}</h4>
+      <div key={index} className="space-y-2">
+        <h3 className="text-base font-bold">{item.name}</h3>
         <p className="text-xs text-neutral-500 dark:text-neutral-400 text-pretty">
           {item.description}
         </p>
@@ -71,11 +71,11 @@ export default function WorkSetup() {
   ];
 
   return (
-    <section className="space-y-3">
-      <h3 className="font-bold text-xl text-pretty">
+    <section className="space-y-2">
+      <h2 className="font-bold text-xl text-pretty">
         Software I use, gadgets I love, and other things I can recommend.
-      </h3>
-      <p className="text-pretty">
+      </h2>
+      <p className="text-pretty !mb-5">
         Here are the things I use to build software, stay productive, or buy to
         fool myself into thinking I’m being productive when I’m really just
         procrastinating. Here’s a big list of all of my favorite stuff.

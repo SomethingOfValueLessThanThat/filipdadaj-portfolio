@@ -41,7 +41,7 @@ export function Header() {
   return (
     <header className="flex justify-between gap-2 w-full max-w-xl mx-auto p-5 xs:p-8">
       <a
-        href="https://github.com/SomethingOfValueLessThanThat"
+        href="https://github.com/SomethingOfValueLessThanThat/filipdadaj-portfolio"
         target="_blank"
         rel="noopener noreferrer"
       >

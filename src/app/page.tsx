@@ -6,11 +6,11 @@ import aboutPasta from "@/assets/images/about-pasta.jpg";
 
 export default function Home() {
   return (
-    <section className="space-y-3">
-      <h3 className="font-bold text-xl text-pretty">
+    <section className="space-y-2">
+      <h2 className="font-bold text-xl text-pretty">
         Heyy, I’m Filip Dadaj. I’m turning ideas into immersive online
         experiences.
-      </h3>
+      </h2>
       <p className="text-pretty">
         I’m, a Front-End Developer, UI/UX Designer, and 3D Modeler who loves
         bringing ideas to life—whether it’s through clean, responsive code or

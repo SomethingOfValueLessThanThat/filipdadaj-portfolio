@@ -8,17 +8,11 @@ import {
 } from "@/components/ui/accordion";
 import { useToast } from "@/hooks/use-toast";
 import { Box, Brush, CodeXml, File, Move3D } from "lucide-react";
-import uiUxPismoletka from "@/assets/images/ui-ux-pismoletka.jpeg";
 import uiUxPismoletkaXl from "@/assets/images/ui-ux-pismoletka-xl.jpg";
-import uiUxTnyli from "@/assets/images/ui-ux-tnyli.jpeg";
 import uiUxTnyliXl from "@/assets/images/ui-ux-tnyli-xl.jpg";
-import renderLamborghini from "@/assets/images/render-lamborghini.jpeg";
 import renderLamborghiniXl from "@/assets/images/render-lamborghini-xl.jpg";
-import renderGpu from "@/assets/images/render-gpu.jpeg";
 import renderGpuXl from "@/assets/images/render-gpu-xl.jpg";
-import workbenchLamborghiny from "@/assets/images/workbench-lamborghini.jpeg";
 import workbenchLamborghinyXl from "@/assets/images/workbench-lamborghini-xl.jpg";
-import workbenchGpu from "@/assets/images/workbench-gpu.jpeg";
 import workbenchGpuXl from "@/assets/images/workbench-gpu-xl.jpg";
 import printerBase from "@/assets/images/printer-base.jpeg";
 import printerDragon from "@/assets/images/printer-dragon.jpeg";
@@ -41,6 +35,11 @@ export default function Projects() {
         Building digital worlds, one line of code at a time, shaping dreams into
         pixels.
       </h1>
+      <p className="text-pretty !mt-2 !mb-5">
+        I&#39;ve tackled many small projects over the years, but these are the
+        ones I&#39;m most proud of. This portfolio is open-source, so if you
+        find something that catches your eye, feel free to explore the code.
+      </p>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>
@@ -120,7 +119,7 @@ export default function Projects() {
             </p>
             <Credenza>
               <CredenzaTrigger asChild>
-                <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
+                <div className="max-sm:pointer-events-none relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
                     src={uiUxPismoletkaXl}
                     alt="web based saas platform for touch typing"
@@ -149,7 +148,7 @@ export default function Projects() {
             </p>
             <Credenza>
               <CredenzaTrigger asChild>
-                <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
+                <div className="max-sm:pointer-events-none relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
                     src={uiUxTnyliXl}
                     alt="web based app for shortening urls"
@@ -189,7 +188,7 @@ export default function Projects() {
             </p>
             <Credenza>
               <CredenzaTrigger asChild>
-                <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
+                <div className="max-sm:pointer-events-none relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
                     src={renderLamborghiniXl}
                     alt="web based saas platform for touch typing"
@@ -214,7 +213,7 @@ export default function Projects() {
             <div className="spacer h-3"></div>
             <Credenza>
               <CredenzaTrigger asChild>
-                <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
+                <div className="max-sm:pointer-events-none relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
                     src={workbenchLamborghinyXl}
                     alt="web based saas platform for touch typing"
@@ -245,7 +244,7 @@ export default function Projects() {
             </p>
             <Credenza>
               <CredenzaTrigger asChild>
-                <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
+                <div className="max-sm:pointer-events-none relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
                     src={renderGpuXl}
                     alt="web based saas platform for touch typing"
@@ -270,7 +269,7 @@ export default function Projects() {
             <div className="spacer h-3"></div>
             <Credenza>
               <CredenzaTrigger asChild>
-                <div className="relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
+                <div className="max-sm:pointer-events-none relative w-full aspect-video overflow-hidden rounded-xl hover:cursor-pointer">
                   <Image
                     src={workbenchGpuXl}
                     alt="web based saas platform for touch typing"

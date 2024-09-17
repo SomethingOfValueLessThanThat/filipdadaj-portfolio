@@ -1,11 +1,11 @@
 export default function Home() {
   return (
-    <section className="space-y-3">
-      <h3 className="font-bold text-xl text-pretty">
+    <section>
+      <h2 className="font-bold text-xl text-pretty">
         My Go-To Playlist/Artists while doing something creative
-      </h3>
-      <h4 className="text-base font-bold">Cyberia cafe</h4>
-      <p className="text-pretty">
+      </h2>
+      <h3 className="text-base font-bold mt-4">Cyberia cafe</h3>
+      <p className="text-pretty mb-3">
         My curated playlist for those deep, late-night coding sessions. Tune in
         and let the music keep you focused as you power through the night.
       </p>
@@ -19,8 +19,8 @@ export default function Home() {
           loading="lazy"
         ></iframe>
       </div>
-      <h4 className="text-base font-bold !mt-8">Skeler</h4>
-      <p className="text-pretty">
+      <h3 className="text-base font-bold mt-8">Skeler</h3>
+      <p className="text-pretty mb-3">
         This Artist is my personal refuge when I need to disconnect and find my
         rhythm. The intense, evocative sounds of this Australian artist always
         resonate, setting the perfect mood for any moment.
