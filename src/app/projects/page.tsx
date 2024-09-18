@@ -97,7 +97,7 @@ export default function Projects() {
                 });
               }}
             >
-              stage.tepp.io
+              Tepp Patok
             </button>
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
               An internal web application designed exclusively for employees of

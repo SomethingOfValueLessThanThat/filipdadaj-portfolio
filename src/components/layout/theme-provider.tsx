@@ -3,7 +3,7 @@
 // Nextjs
 import * as React from "react";
 
-// Layout Components
+// Themes
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { type ThemeProviderProps } from "next-themes/dist/types";
 
