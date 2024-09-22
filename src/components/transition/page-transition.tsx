@@ -25,9 +25,12 @@ export default function PageTransition({
       {isPresent && (
         <motion.div
           key={pathname}
-          initial={{ opacity: 0, filter: "blur(10px)" }}
+          initial={{ opacity: 0, filter: "blur(12px)" }}
           animate={{ opacity: 1, filter: "blur(0px)" }}
-          transition={{ duration: 0.6 }}
+          transition={{
+            duration: 0.5,
+            ease: [0.55, 0.085, 0.68, 0.53],
+          }}
         >
           {children}
         </motion.div>

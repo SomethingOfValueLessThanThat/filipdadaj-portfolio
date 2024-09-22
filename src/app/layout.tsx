@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 
 // Styles CSS
 import "@/styles/globals.css";
+import "@/styles/animated-path.css";
 
 // Utility Functions
 import { cn } from "@/lib/utils";
@@ -25,13 +26,7 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: "Filip Dadaj - Portfolio",
   description: "A showcase of my work, skills, and experiences as a developer",
-  keywords: [
-    "portfolio",
-    "web development",
-    "frontend",
-    "backend",
-    "full-stack",
-  ],
+  keywords: ["portfolio", "web development", "frontend"],
 };
 
 export default function RootLayout({

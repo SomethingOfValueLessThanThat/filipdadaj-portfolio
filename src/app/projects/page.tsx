@@ -72,7 +72,7 @@ export default function Projects() {
               <Badge>Tailwind CSS</Badge>
             </div>
             <a
-              href="https://marali-receptury.vercel.app/"
+              href="https://marali-receptury.bar/"
               className="font-bold mt-5 w-fit"
               target="_blank"
             >

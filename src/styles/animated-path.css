@@ -1,0 +1,107 @@
+.animated-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 6s ease forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-note {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.path1 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+}
+
+.path2 {
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 100ms;
+}
+
+.path3 {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 200ms;
+}
+
+.path4 {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 300ms;
+}
+
+.path5 {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 400ms;
+}
+
+.path6 {
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 500ms;
+}
+
+.path7 {
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 600ms;
+}
+
+.path8 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 700ms;
+}
+
+.path9 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 800ms;
+}
+
+.path10 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 900ms;
+}
+
+.path11 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 1000ms;
+}
+
+.path12 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 1100ms;
+}
+
+.path13 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 1200ms;
+}
