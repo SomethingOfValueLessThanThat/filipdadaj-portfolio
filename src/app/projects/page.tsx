@@ -192,7 +192,7 @@ export default function Projects() {
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400 mb-3">
               A 3D render featuring a custom Lamborghini body kit, complete with
               procedural materials, a fully designed scene, and custom lighting
-              for a striking and realistic presentation.aaaaaaaaaaaa
+              for a striking and realistic presentation.
             </p>
             <Credenza>
               <CredenzaTrigger asChild>
