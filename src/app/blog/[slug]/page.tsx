@@ -51,8 +51,9 @@ const components = {
   Link,
 };
 
-export default function Post({ params }: { params: { slug: string } }) {
-  const props = getPost(params);
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const props = getPost({ slug });
   return (
     <>
       <p className="text-neutral-500 dark:text-neutral-400">

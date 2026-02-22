@@ -24,7 +24,7 @@ export function ThemeSyntaxHighlighter({
       style={theme === "dark" ? oneDark : oneLight}
       language={language}
       PreTag="div"
-      className="[&>*]:text-xs !bg-transparent [&>*]:!bg-transparent !p-0 !mb-4"
+      className="[&>*]:text-xs bg-transparent! [&>*]:bg-transparent! p-0! mb-4!"
     >
       {children}
     </SyntaxHighlighter>
