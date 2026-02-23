@@ -28,7 +28,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-between py-3 px-4 bg-[#F3F3F3] dark:bg-iron-700 text-base font-bold transition-all [&[data-state=open]>svg]:rotate-45",
+        "flex flex-1 items-center justify-between py-3 px-4 bg-[#F3F3F3] dark:bg-iron-700 text-base font-bold cursor-pointer transition-all [&[data-state=open]>svg]:rotate-45",
         className,
       )}
       {...props}
@@ -40,7 +40,7 @@ const AccordionTrigger = React.forwardRef<
         size={18}
         strokeWidth={2.6}
         absoluteStrokeWidth={true}
-        className="shrink-0 transition-transform text-iron-200"
+        className="shrink-0 transition-transform duration-300 ease-in-out text-iron-200"
       />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
