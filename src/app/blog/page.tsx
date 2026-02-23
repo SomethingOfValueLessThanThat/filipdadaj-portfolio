@@ -40,7 +40,6 @@ export default function BlogIndex() {
 
       <ul className="mt-10 space-y-6">
         {posts.map((post) => (
-          <>
             <li key={post.slug} className="grid sm:flex gap-2 sm:gap-12">
               <p className="text-xs sm:mt-5">
                 {new Date(post.date).toLocaleDateString()}
@@ -58,7 +57,6 @@ export default function BlogIndex() {
                 </p>
               </Link>
             </li>
-          </>
         ))}
       </ul>
     </div>
