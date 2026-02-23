@@ -7,7 +7,8 @@
       "Bash(cd:*)",
       "Bash(tail:*)",
       "Bash(npm info:*)",
-      "Bash(cd \"/Users/filippo/Developer/FILIP DADAJ PORTFOLIO NEWER/filipdadaj-portfolio\" && npm install embla-carousel-react@^8.6.0 2>&1)"
+      "Bash(cd \"/Users/filippo/Developer/FILIP DADAJ PORTFOLIO NEWER/filipdadaj-portfolio\" && npm install embla-carousel-react@^8.6.0 2>&1)",
+      "WebFetch(domain:github.com)"
     ]
   }
 }
