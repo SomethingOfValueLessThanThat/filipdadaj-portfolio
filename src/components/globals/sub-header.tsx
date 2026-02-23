@@ -15,28 +15,19 @@ export function SubHeader() {
         alt="profile picture"
         width={96}
         height={96}
-        className="rounded-[32px] pointer-events-none"
+        className="rounded-4xl pointer-events-none"
       />
       <div className="inline-flex items-center gap-2">
         <h1 className="font-bold text-[32px] tracking-tight">Filip Dadaj</h1>
         <CheckMark />
       </div>
-      <p className="text-center">
-        🔥 WHAT’S UP, LEGENDS 🔥
-        <br />
-        <br />
-        💎 FRONT-END DEVELOPER
-        <br />
-        <br />⚡ UI/UX DESIGNER
-        <br />
-        <br />✅ Nextjs // Tailwind CSS // Zed code editor
-        <br />
-        <br />
-        I’m driven by optimism and <br />a passion for building cool stuff
-        <br />
-        <br />
-        LET’S CODE SOME MAGIC!
-      </p>
+      <ul className="flex flex-col gap-4 text-center">
+        <li>💎 FRONT-END DEVELOPER</li>
+        <li>⚡ UI/UX DESIGNER</li>
+        <li>✅ Nextjs // Tailwind CSS // Zed code editor</li>
+        <li>I build apps that people love to use</li>
+        <li>or just something cool</li>
+      </ul>
     </div>
   );
 }
