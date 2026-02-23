@@ -105,3 +105,17 @@
   animation: draw-note 2s ease forwards;
   animation-delay: 1200ms;
 }
+
+.path14 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 1300ms;
+}
+
+.path15 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: draw-note 2s ease forwards;
+  animation-delay: 1500ms;
+}

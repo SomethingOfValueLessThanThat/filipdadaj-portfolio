@@ -13,7 +13,7 @@ import useEmblaCarousel from "embla-carousel-react";
 
 // Images
 import PinkSketch from "@/assets/svgs/pink-sketch";
-import PinkNote from "@/assets/svgs/pink-note";
+import PinkNote from "@/assets/svgs/pink-note-czech";
 
 // Globals Componets
 import { Button } from "@/components/ui/button";
@@ -57,11 +57,11 @@ export default function NavTabs() {
   ];
 
   return (
-    <div className="relative w-full max-w-xl mx-auto p-5 xs:p-8 [&>*]:select-none">
-      <div className="overflow-x-clip rounded-xl" ref={emblaRef}>
-        <div className="flex gap-2">
+    <div className="relative w-full max-w-xl mx-auto p-5 xs:px-8 *:select-none">
+      <div className="overflow-hidden rounded-xl" ref={emblaRef}>
+        <div className="flex gap-2 h-18.5">
           {navItems.map((item) => (
-            <Link href={item.href} key={item.href}>
+            <Link href={item.href} key={item.href} className="m-auto">
               <Button
                 className={`relative ${pathname === item.href ? "hover:shadow-none" : "[&>div]:hidden"}`}
               >
@@ -86,7 +86,7 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-5 xs:left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-background"
+          className="absolute left-5 xs:left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-iron-50 hover:dark:bg-iron-700"
           onClick={scrollPrev}
         >
           <ChevronLeft
@@ -102,7 +102,7 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-5 xs:right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-background"
+          className="absolute right-5 xs:right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-iron-50 hover:dark:bg-iron-700"
           onClick={scrollNext}
         >
           <ChevronRight
