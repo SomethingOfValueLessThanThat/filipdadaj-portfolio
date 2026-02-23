@@ -6,7 +6,7 @@
 /* Dark mode via .dark class (next-themes) */
 @custom-variant dark (&:is(.dark *));
 
-/* ─── Static theme tokens ─────────────────────────────────────── */
+/* Static theme tokens */
 @theme {
   /* Breakpoints */
   --breakpoint-xs: 412px;
@@ -54,7 +54,7 @@
   }
 }
 
-/* ─── shadcn/ui CSS variables ─────────────────────────────────── */
+/* shadcn/ui CSS variables */
 :root {
   --background: hsl(0 0% 100%);
   --foreground: hsl(0, 0%, 7.06%);
@@ -100,7 +100,7 @@
   --ring: hsl(240 4.9% 83.9%);
 }
 
-/* ─── Map CSS variables to Tailwind theme ─────────────────────── */
+/* Map CSS variables to Tailwind theme */
 @theme inline {
   --font-sans: var(--font-sans);
 
@@ -125,7 +125,7 @@
   --color-ring: var(--ring);
 }
 
-/* ─── Base styles ─────────────────────────────────────────────── */
+/* Base styles */
 * {
   border-color: var(--border);
 }
