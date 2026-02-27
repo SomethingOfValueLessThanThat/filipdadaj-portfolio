@@ -26,7 +26,7 @@ export function SubHeader() {
         <li>⚡ UI/UX DESIGNER</li>
         <li>✅ Nextjs // Tailwind CSS // Zed code editor</li>
         <li>I build apps that people love to use</li>
-        <li>or just something cool</li>
+        <li>or just something cool ;))</li>
       </ul>
     </div>
   );
