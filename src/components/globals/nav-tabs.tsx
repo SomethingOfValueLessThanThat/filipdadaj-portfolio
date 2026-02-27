@@ -29,11 +29,11 @@ export default function NavTabs() {
   const pathname = usePathname();
 
   const scrollPrev = React.useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
+    if (emblaApi) emblaApi.scrollTo(0);
   }, [emblaApi]);
 
   const scrollNext = React.useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
+    if (emblaApi) emblaApi.scrollTo(emblaApi.slideNodes().length - 1);
   }, [emblaApi]);
 
   const onSelect = React.useCallback(() => {
