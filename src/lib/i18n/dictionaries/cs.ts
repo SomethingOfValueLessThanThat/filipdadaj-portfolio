@@ -14,8 +14,8 @@ export const cs: Dictionary = {
   SUBHEADER_ROLE_1: "💎 FRONT-END DEVELOPER",
   SUBHEADER_ROLE_2: "⚡ UI/UX DESIGNER",
   SUBHEADER_STACK: "✅ Nextjs // Tailwind CSS // Zed code editor",
-  SUBHEADER_TAGLINE_1: "I build apps that people love to use",
-  SUBHEADER_TAGLINE_2: "or just something cool ;))",
+  SUBHEADER_TAGLINE_1: "Buduju apky co lidi rádi používají",
+  SUBHEADER_TAGLINE_2: "nebo něco so je prostě cool ;))",
 
   // Theme toggle
   THEME_LIGHT: "Světlý",

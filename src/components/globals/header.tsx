@@ -13,8 +13,6 @@ export function Header() {
   return (
     <header className="flex gap-2 w-full max-w-xl mx-auto p-5 xs:p-8">
       <ContactButton />
-      <div className="w-full"></div>
-      <ContactButton />
       <LanguageToggle />
       <ModeToggle />
     </header>

@@ -41,16 +41,12 @@ export default function Projects() {
 
   return (
     <section className="space-y-3">
-      <h1 className="font-bold text-xl text-pretty">
-        {t("PROJECTS_HEADING")}
-      </h1>
-      <p className="text-pretty mt-2 mb-5">
-        {t("PROJECTS_SUBHEADING")}
-      </p>
+      <h1 className="font-bold text-xl text-pretty">{t("PROJECTS_HEADING")}</h1>
+      <p className="text-pretty mt-2 mb-5">{t("PROJECTS_SUBHEADING")}</p>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>
-            <h2>IPEX - Nov 2024 - Present</h2>
+            <h2 className="text-pretty text-left">IPEX - Nov 2024 - Present</h2>
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
@@ -62,7 +58,9 @@ export default function Projects() {
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>
-            <h2>Webtoad - Nov 2024 - Mar 2025</h2>
+            <h2 className="text-pretty text-left">
+              Webtoad - Nov 2024 - Mar 2025
+            </h2>
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
@@ -74,7 +72,9 @@ export default function Projects() {
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>
-            <h2>Šikmo - Jan 2024 - Oct 2024</h2>
+            <h2 className="text-pretty text-left">
+              Šikmo - Jan 2024 - Oct 2024
+            </h2>
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
@@ -86,7 +86,9 @@ export default function Projects() {
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>
-            <h2>Hero Engineering SE - Jun 2022 - Dec 2023</h2>
+            <h2 className="text-pretty text-left">
+              Hero Engineering SE - Jun 2022 - Dec 2023
+            </h2>
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
