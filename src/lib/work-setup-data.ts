@@ -15,22 +15,17 @@ export const workSetupData: SectionProps[] = [
       {
         name: "Macbook Pro M1 Pro 16GB RAM (2021)",
         description:
-          "The new MacBook Pro is a game-changer. It’s seamless performance and incredible battery life make even the most demanding tasks feel effortless. The display is stunning, with vibrant colors and crisp detail. It's the perfect companion for anyone serious about their craft.",
+          "Na to že je pět let starej mi slouží fakt dobře. Co k tomu říct? Prostě moje lopata k práci :D. Nesmím zapomenout zmínit to že kupuju laptopy jen s ENG layoutem.",
       },
       {
         name: "DELL Ultrasharp U2520D",
         description:
-          "The color accuracy and sharpness on this monitor are phenomenal. It has significantly improved my productivity and the overall quality of my work. Hands down, the best small monitor for Mac.",
+          "25 palců je akorát pro mně a ideál na QHD rozlišení, které je ideální na MacOs kvůli škálovaní.",
       },
       {
-        name: "HHKB Profesional Hybrid Type-S keyboard",
+        name: "razer deathadder v2 x hyperspeed",
         description:
-          "Typing on this keyboard is an absolute joy. The quiet keys and compact layout make it perfect for long coding sessions.",
-      },
-      {
-        name: "Logitech g502 Lightspeed",
-        description:
-          "The responsiveness and ergonomic design of this mouse are unmatched. It has enhanced my productivity tasks immensely.",
+          "Nemůžu si ji víc vynachválit. Bluetooth, výdrž několik měsíců na jednu AA baterku, žádné podsvícení, mapovatelný tlačítka (bohužel jen na Windows). Předtím jsem měl tu samou kabelovou bílou.",
       },
     ],
   },
@@ -38,24 +33,19 @@ export const workSetupData: SectionProps[] = [
     title: "Development",
     items: [
       {
-        name: "Zed code editor",
+        name: "Zed",
         description:
-          "I don’t like visual studio code it is so overwhelming for me. Zed is incredibly fast and efficient. Its minimalist design helps me focus on coding without any distractions.",
+          "Ne moc známý code editor. Je opravdu rychlej, proto jsem si ho vybral a obsahuje vše, co potřebuju.",
       },
       {
         name: "Next.js",
         description:
-          "Next.js makes building React applications a breeze. The server-side rendering and static site generation features are top-notch.",
+          "Next je framework mýho výběru, důležitý je, že je postavenej na Reactu. Vanilla Reactu se taky nebráním.",
       },
       {
-        name: "Blender",
+        name: "Helium",
         description:
-          "A powerful tool for 3D modeling and animation. Its comprehensive feature set rivals even the most expensive software out there.",
-      },
-      {
-        name: "Arc",
-        description:
-          "Arc's browser by the The Browser Company is seamless and fast. It has quickly become my go-to for browsing and research.",
+          "Za mě úplně nejlepší prohlížeč na development. Je rychlej a minimální, přesně tak to mám rád.",
       },
     ],
   },
@@ -65,12 +55,7 @@ export const workSetupData: SectionProps[] = [
       {
         name: "Figma",
         description:
-          "Figma's collaborative design features are incredible. It's streamlined my workflow and improved team collaboration.",
-      },
-      {
-        name: "Photoshop",
-        description:
-          "Great software and powerful editing tools are unparalleled. It's my go-to software for any graphic design project.",
+          "Standard ve světě UI/UX designu.  Zatím nikdo nepřisel s něčím lepším.",
       },
     ],
   },
@@ -80,12 +65,12 @@ export const workSetupData: SectionProps[] = [
       {
         name: "Excalidraw",
         description:
-          "A fantastic tool for creating sketches, diagrams, and visual notes with a hand-drawn aesthetic. The interface is straightforward and intuitive, allowing users to start drawing without a steep learning curve.",
+          "Excalidraw mám na občasný poznámky a sketche. Má styl ručního psaní, který se mi líbí. Navíc je free to use.",
       },
       {
         name: "Spotify",
         description:
-          "Spotify offers an extensive music library and personalized playlists that perfectly match my taste. It's user-friendly interface make it convenient for any situation. Plus, the ability to discover new music keeps my listening experience fresh.",
+          "Jasná volba na přehrávání písniček a podcastů. Tohle používám furt, i mimo práci.",
       },
     ],
   },

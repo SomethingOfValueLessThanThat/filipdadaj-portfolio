@@ -52,8 +52,8 @@ export default function NavTabs() {
     { href: "/", label: "ABOUT ME", emoji: "&#128104;&#8205;&#128188;" },
     { href: "/projects", label: "PROJECTS", emoji: "&#128736;" },
     { href: "/work-setup", label: "WORK SETUP", emoji: "&#129716;" },
-    { href: "/playlist", label: "PLAYLIST", emoji: "&#127926;" },
-    { href: "/blog", label: "PERSONAL BLOG", emoji: "&#9999;&#65039;" },
+    { href: "/work-ethic", label: "WORK ETHIC", emoji: "&#128170;" },
+    { href: "/playlist", label: "MY PLAYLIST", emoji: "&#127926;" },
   ];
 
   return (
@@ -86,7 +86,7 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute left-5 xs:left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-iron-50 hover:dark:bg-iron-700"
+          className="absolute left-5 xs:left-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:border-2"
           onClick={scrollPrev}
         >
           <ChevronLeft
@@ -102,7 +102,7 @@ export default function NavTabs() {
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-5 xs:right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:bg-iron-50 hover:dark:bg-iron-700"
+          className="absolute right-5 xs:right-8 top-1/2 -translate-y-1/2 z-10 size-6 rounded-[10px] border-iron-50 dark:border-iron-700 hover:border-2"
           onClick={scrollNext}
         >
           <ChevronRight
