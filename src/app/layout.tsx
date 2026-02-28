@@ -22,6 +22,7 @@ import PageTransition from "@/components/transition/page-transition";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { VaulDrawerWrapper } from "@/components/layout/vaul-drawer-wrapper";
 import { Toaster } from "@/components/ui/toaster";
+import { LocaleProvider } from "@/lib/i18n/i18n-context";
 
 export const metadata: Metadata = {
   title: "Filip Dadaj - Portfolio",
@@ -49,18 +50,20 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <VaulDrawerWrapper>
-            <Header />
-            <SubHeader />
-            <NavTabs />
-            <PageTransition>
-              <main className="w-full max-w-xl mx-auto px-5 xs:px-8">
-                {children}
-              </main>
-            </PageTransition>
-            <Footer />
-          </VaulDrawerWrapper>
-          <Toaster />
+          <LocaleProvider>
+            <VaulDrawerWrapper>
+              <Header />
+              <SubHeader />
+              <NavTabs />
+              <PageTransition>
+                <main className="w-full max-w-xl mx-auto px-5 xs:px-8">
+                  {children}
+                </main>
+              </PageTransition>
+              <Footer />
+            </VaulDrawerWrapper>
+            <Toaster />
+          </LocaleProvider>
         </ThemeProvider>
       </body>
     </html>

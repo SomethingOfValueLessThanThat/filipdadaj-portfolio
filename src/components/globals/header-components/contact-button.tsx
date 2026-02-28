@@ -21,9 +21,11 @@ import {
 } from "@/components/ui/credenza";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
+import { useTranslation } from "@/lib/i18n/i18n-context";
 
 export function ContactButton() {
   const [contactMethod, setContactMethod] = useState("option-one");
+  const { t } = useTranslation();
 
   const handleGetInTouch = () => {
     switch (contactMethod) {
@@ -37,7 +39,7 @@ export function ContactButton() {
         window.location.href = "mailto:filipdadaj@gmail.com";
         break;
       default:
-        alert("Please select a contact method.");
+        alert(t("CONTACT_ALERT"));
     }
   };
 
@@ -51,20 +53,19 @@ export function ContactButton() {
             className="text-iron-200"
             absoluteStrokeWidth={true}
           />
-          <span className="sr-only">Contact</span>
+          <span className="sr-only">{t("CONTACT_SR")}</span>
         </Button>
       </CredenzaTrigger>
       <CredenzaContent>
         <CredenzaHeader>
           <CredenzaTitle>
             <h3 className="font-bold text-xl text-pretty">
-              Let&apos;s work together &#128075;
+              {t("CONTACT_TITLE")}
             </h3>
           </CredenzaTitle>
           <CredenzaDescription>
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              I&apos;m all ears for any kind of communication. Let&apos;s dive
-              into a reat conversation!
+              {t("CONTACT_DESCRIPTION")}
             </p>
           </CredenzaDescription>
         </CredenzaHeader>
@@ -76,25 +77,25 @@ export function ContactButton() {
           >
             <div className="flex items-center justify-center space-x-2">
               <RadioGroupItem value="option-one" id="option-one" />
-              <Label htmlFor="option-one">Call me</Label>
+              <Label htmlFor="option-one">{t("CONTACT_CALL")}</Label>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <RadioGroupItem value="option-two" id="option-two" />
-              <Label htmlFor="option-two">Text me</Label>
+              <Label htmlFor="option-two">{t("CONTACT_TEXT")}</Label>
             </div>
             <div className="flex items-center justify-center space-x-2">
               <RadioGroupItem value="option-three" id="option-three" />
-              <Label htmlFor="option-three">Email me</Label>
+              <Label htmlFor="option-three">{t("CONTACT_EMAIL")}</Label>
             </div>
           </RadioGroup>
         </CredenzaBody>
         <CredenzaFooter>
           <div className="flex flex-col sm:flex-row gap-2">
             <CredenzaClose asChild>
-              <Button className="&span">Close</Button>
+              <Button className="&span">{t("CONTACT_CLOSE")}</Button>
             </CredenzaClose>
             <Button variant="action" onClick={handleGetInTouch}>
-              Get in touch
+              {t("CONTACT_CTA")}
             </Button>
           </div>
         </CredenzaFooter>

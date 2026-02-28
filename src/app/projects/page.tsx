@@ -33,18 +33,19 @@ import {
   CredenzaTrigger,
 } from "@/components/ui/credenza";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "@/lib/i18n/i18n-context";
 
 export default function Projects() {
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   return (
     <section className="space-y-3">
       <h1 className="font-bold text-xl text-pretty">
-        Klíčové momenty a zkušenosti z mé praxe
+        {t("PROJECTS_HEADING")}
       </h1>
       <p className="text-pretty mt-2 mb-5">
-        Krom startupů a menších firem, jsem úspěšně dokončil spoustu menších
-        jiných projektů, které se sem nevešli
+        {t("PROJECTS_SUBHEADING")}
       </p>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
@@ -53,9 +54,7 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              V Ipexu pracuju v ceřině firmy Qconic, kde vyvíjíme ticketovej
-              systém pro malý a středně velký firmy. Dělám zde frontend, tak
-              UI/UX design.
+              {t("PROJECTS_IPEX_DESC")}
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -67,8 +66,7 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              Ve Webtoad jsem si vyzkoušel práci ve Vue.js. Pracoval jsem tam
-              jen když bylo potřeba a byl to takovej můj side-job.
+              {t("PROJECTS_WEBTOAD_DESC")}
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -80,9 +78,7 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              V Šikmu kluci pracovali na WordPress webech a já mezitím pracoval
-              na hlavním projektu Tepp pro firmu Patok, kde jsme vyvíjeli
-              aplikaci na trackování docházek, zakázek, automobilů a strojů.
+              {t("PROJECTS_SIKMO_DESC")}
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -94,9 +90,7 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              V HE jsem pracoval po boku seniorního programátora, jako junior
-              jsem to neměl lehký a dalo mi to hodně zkušeností, za který jsem
-              teď rád.
+              {t("PROJECTS_HERO_DESC")}
             </p>
           </AccordionContent>
         </AccordionItem>

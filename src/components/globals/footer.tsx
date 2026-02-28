@@ -1,12 +1,15 @@
+"use client";
+
+import { useTranslation } from "@/lib/i18n/i18n-context";
+
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <div className="w-screen mt-auto bg-background pt-16">
       <div className="w-full h-px bg-gradient-to-r from-background via-neutral-300 dark:via-neutral-500 to-background"></div>
       <div className="flex flex-col gap-8 items-center max-w-xl mx-auto p-5 sm:p-8">
-        <p>
-          © 2026. You&apos;re welcome to draw inspiration and customize your
-          own projects, but direct copying of content is not permitted.
-        </p>
+        <p>{t("FOOTER_COPYRIGHT")}</p>
       </div>
     </div>
   );

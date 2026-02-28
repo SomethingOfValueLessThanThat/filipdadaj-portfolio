@@ -6,7 +6,8 @@ import Image from "next/image";
 // Images
 import setup from "@/assets/images/setup.jpeg";
 
-import { workSetupData } from "@/lib/work-setup-data";
+import { getWorkSetupData } from "@/lib/work-setup-data";
+import { useTranslation } from "@/lib/i18n/i18n-context";
 
 // Define the types for the SectionProps
 interface SectionProps {
@@ -29,15 +30,16 @@ const Section: React.FC<SectionProps> = ({ title, items }) => (
 );
 
 export default function WorkSetup() {
+  const { t } = useTranslation();
+  const workSetupData = getWorkSetupData(t);
+
   return (
     <section className="space-y-2">
       <h2 className="font-bold text-xl text-pretty">
-        Věci, bez kterých se neobejdu, software, který používám, a věci, který
-        můžu doporučit
+        {t("WORK_SETUP_HEADING")}
       </h2>
       <p className="text-pretty mb-5">
-        Zde jsou věci, které používám k tvorbě softwaru, k udržení produktivity,
-        nebo které si kupuji pro svůj vlastní dobrej pocit.
+        {t("WORK_SETUP_SUBHEADING")}
       </p>
       <div className="relative aspect-video overflow-hidden rounded-2xl bg-iron-50 w-full">
         <Image

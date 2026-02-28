@@ -17,6 +17,7 @@ import PinkNote from "@/assets/svgs/pink-note-czech";
 
 // Globals Componets
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/lib/i18n/i18n-context";
 
 export default function NavTabs() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -27,6 +28,7 @@ export default function NavTabs() {
   const [canScrollPrev, setCanScrollPrev] = React.useState(false);
   const [canScrollNext, setCanScrollNext] = React.useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollTo(0);
@@ -49,11 +51,11 @@ export default function NavTabs() {
   }, [emblaApi, onSelect]);
 
   const navItems = [
-    { href: "/", label: "ABOUT ME", emoji: "&#128104;&#8205;&#128188;" },
-    { href: "/projects", label: "PROJECTS", emoji: "&#128736;" },
-    { href: "/work-setup", label: "WORK SETUP", emoji: "&#129716;" },
-    { href: "/work-ethic", label: "WORK ETHIC", emoji: "&#128170;" },
-    { href: "/playlist", label: "MY PLAYLIST", emoji: "&#127926;" },
+    { href: "/", label: t("NAV_ABOUT"), emoji: "&#128104;&#8205;&#128188;" },
+    { href: "/projects", label: t("NAV_PROJECTS"), emoji: "&#128736;" },
+    { href: "/work-setup", label: t("NAV_WORK_SETUP"), emoji: "&#129716;" },
+    { href: "/work-ethic", label: t("NAV_WORK_ETHIC"), emoji: "&#128170;" },
+    { href: "/playlist", label: t("NAV_PLAYLIST"), emoji: "&#127926;" },
   ];
 
   return (
@@ -95,7 +97,7 @@ export default function NavTabs() {
             className="text-iron-200 -translate-x-px"
             absoluteStrokeWidth={true}
           />
-          <span className="sr-only">Navigation to the left</span>
+          <span className="sr-only">{t("NAV_SCROLL_LEFT")}</span>
         </Button>
       )}
       {canScrollNext && (
@@ -111,7 +113,7 @@ export default function NavTabs() {
             className="text-iron-200 translate-x-px"
             absoluteStrokeWidth={true}
           />
-          <span className="sr-only">Navigation to the right</span>
+          <span className="sr-only">{t("NAV_SCROLL_RIGHT")}</span>
         </Button>
       )}
     </div>

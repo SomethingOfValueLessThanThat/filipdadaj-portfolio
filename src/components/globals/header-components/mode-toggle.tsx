@@ -11,9 +11,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useTranslation } from "@/lib/i18n/i18n-context";
 
 export function ModeToggle() {
   const { setTheme } = useTheme();
+  const { t } = useTranslation();
 
   return (
     <DropdownMenu>
@@ -31,18 +33,18 @@ export function ModeToggle() {
             className="text-iron-200 absolute scale-0 transition-all dark:scale-100"
             absoluteStrokeWidth={true}
           />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">{t("THEME_SR")}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="mt-px">
         <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
+          {t("THEME_LIGHT")}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
+          {t("THEME_DARK")}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
+          {t("THEME_SYSTEM")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

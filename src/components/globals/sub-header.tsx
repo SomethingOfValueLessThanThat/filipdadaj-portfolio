@@ -1,3 +1,5 @@
+"use client";
+
 // Nextjs
 import Image from "next/image";
 
@@ -7,7 +9,11 @@ import profilePicture from "@/assets/images/profile-picture.png";
 // Icons
 import CheckMark from "@/assets/svgs/check-mark";
 
+import { useTranslation } from "@/lib/i18n/i18n-context";
+
 export function SubHeader() {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col gap-8 items-center w-full max-w-xl mx-auto px-5 xs:px-8">
       <Image
@@ -22,11 +28,11 @@ export function SubHeader() {
         <CheckMark />
       </div>
       <ul className="flex flex-col gap-4 text-center">
-        <li>💎 FRONT-END DEVELOPER</li>
-        <li>⚡ UI/UX DESIGNER</li>
-        <li>✅ Nextjs // Tailwind CSS // Zed code editor</li>
-        <li>I build apps that people love to use</li>
-        <li>or just something cool ;))</li>
+        <li>{t("SUBHEADER_ROLE_1")}</li>
+        <li>{t("SUBHEADER_ROLE_2")}</li>
+        <li>{t("SUBHEADER_STACK")}</li>
+        <li>{t("SUBHEADER_TAGLINE_1")}</li>
+        <li>{t("SUBHEADER_TAGLINE_2")}</li>
       </ul>
     </div>
   );

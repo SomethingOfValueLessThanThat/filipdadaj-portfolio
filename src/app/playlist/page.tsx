@@ -1,8 +1,14 @@
-export default function Home() {
+"use client";
+
+import { useTranslation } from "@/lib/i18n/i18n-context";
+
+export default function Playlist() {
+  const { t } = useTranslation();
+
   return (
     <section>
       <h2 className="font-bold text-xl text-pretty">
-        Moji go-to umělci když delám něco kreativniho nebo pragramuju
+        {t("PLAYLIST_HEADING")}
       </h2>
       <p className="text-pretty mt-5 mb-2">Overwerk</p>
       <iframe

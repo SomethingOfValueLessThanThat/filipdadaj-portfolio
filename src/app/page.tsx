@@ -1,3 +1,5 @@
+"use client";
+
 // Nextjs
 import Image from "next/image";
 
@@ -7,28 +9,24 @@ import aboutLaptop from "@/assets/images/about-laptop.jpg";
 import aboutMe from "@/assets/images/about-me.jpg";
 import aboutPasta from "@/assets/images/about-pasta.jpg";
 
+import { useTranslation } from "@/lib/i18n/i18n-context";
+
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <section className="space-y-2">
       <h2 className="font-bold text-xl text-pretty">
-        Jmenuji se Filip Dadaj a jsem frontend programátor a UI/UX designer
+        {t("HOME_HEADING")}
       </h2>
       <p className="text-pretty">
-        Programování a designu se věnuji 6+ let. Měl jsem štěstí a už od mala
-        jsem vlastnil notebook. V té době jsem hrál jen hry, které jsem si
-        modoval a upravoval. Naučil jsem se tak řešit problémy a hledat na
-        internetu řešení, co kde a jak spravit. Později jsem se věnoval i 3D
-        modelování v Blenderu, kde jsem se naučil spoustu věcí ohledně
-        developmentu her, ale u toho jsem nezůstal.
+        {t("HOME_BODY_1")}
         <br />
         <br />
-        Teď na tu lidskou stránku... Věnuju se horolezectví a nejraději lezu
-        bouldery (krátké úseky do pár metrů) na umělé stěně vevnitř. Rád vařím a
-        miluju italskou kuchyni, tu tradiční.
+        {t("HOME_BODY_2")}
         <br />
-        <br />K práci používám nezbytné věci, které mám popsané na (WORK SETUP),
-        a k práci také využívám AI, o čemž mám více rozepsáno na stránce (WORK
-        ETHIC).
+        <br />
+        {t("HOME_BODY_3")}
       </p>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 xs:gap-8 sm:gap-2 w-full mt-8">
         <div className="bg-gray-300 dark:bg-neutral-800 w-full aspect-square border-4 border-white dark:border-neutral-700 shadow-3xl rounded-4xl overflow-hidden rotate-6">
