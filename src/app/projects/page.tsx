@@ -53,8 +53,9 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              A landing page for seamless customer verification, allowing users
-              to quickly verify their identity before purchasing cryptocurrency.
+              V Ipexu pracuju v ceřině firmy Qconic, kde vyvíjíme ticketovej
+              systém pro malý a středně velký firmy. Dělám zde frontend, tak
+              UI/UX design.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -66,8 +67,8 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              A landing page for seamless customer verification, allowing users
-              to quickly verify their identity before purchasing cryptocurrency.
+              Ve Webtoad jsem si vyzkoušel práci ve Vue.js. Pracoval jsem tam
+              jen když bylo potřeba a byl to takovej můj side-job.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -79,8 +80,9 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              A landing page for seamless customer verification, allowing users
-              to quickly verify their identity before purchasing cryptocurrency.
+              V Šikmu kluci pracovali na WordPress webech a já mezitím pracoval
+              na hlavním projektu Tepp pro firmu Patok, kde jsme vyvíjeli
+              aplikaci na trackování docházek, zakázek, automobilů a strojů.
             </p>
           </AccordionContent>
         </AccordionItem>
@@ -92,8 +94,9 @@ export default function Projects() {
           </AccordionTrigger>
           <AccordionContent className="flex flex-col">
             <p className="text-xs text-balance sm:text-pretty text-neutral-500 dark:text-neutral-400">
-              A landing page for seamless customer verification, allowing users
-              to quickly verify their identity before purchasing cryptocurrency.
+              V HE jsem pracoval po boku seniorního programátora, jako junior
+              jsem to neměl lehký a dalo mi to hodně zkušeností, za který jsem
+              teď rád.
             </p>
           </AccordionContent>
         </AccordionItem>
