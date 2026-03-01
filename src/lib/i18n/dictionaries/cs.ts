@@ -2,11 +2,12 @@ import type { Dictionary } from "../types";
 
 export const cs: Dictionary = {
   // Nav
-  NAV_ABOUT: "O MNĚ",
+  NAV_ABOUT: "KDO JSEM",
   NAV_PROJECTS: "PROJEKTY",
-  NAV_WORK_SETUP: "WORK SETUP",
-  NAV_WORK_ETHIC: "WORK ETHIC",
-  NAV_PLAYLIST: "PLAYLIST",
+  NAV_WORK_SETUP: "MOJE VYBAVENÍ",
+  NAV_WORK_ETHIC: "PRACOVNÍ ETIKA",
+  NAV_PLAYLIST: "MŮJ PLAYLIST",
+  NAV_EASTER_EGGS: "EASTER EGGS",
   NAV_SCROLL_LEFT: "Navigace doleva",
   NAV_SCROLL_RIGHT: "Navigace doprava",
 
@@ -25,12 +26,11 @@ export const cs: Dictionary = {
 
   // Contact modal
   CONTACT_SR: "Kontakt",
-  CONTACT_TITLE: "Let's work together \u{1F44B}",
-  CONTACT_DESCRIPTION:
-    "I'm all ears for any kind of communication. Let's dive into a great conversation!",
-  CONTACT_CALL: "Zavolejte mi",
-  CONTACT_TEXT: "Napište mi SMS",
-  CONTACT_EMAIL: "Napište mi email",
+  CONTACT_TITLE: "Pojďme spolupracovat \u{1F44B}",
+  CONTACT_DESCRIPTION: "Jsem tu pro jakýkoliv druh komunikace.",
+  CONTACT_CALL: "Zavolej mi",
+  CONTACT_TEXT: "SMS",
+  CONTACT_EMAIL: "E-mail",
   CONTACT_CLOSE: "Zavřít",
   CONTACT_CTA: "Kontaktujte mě",
   CONTACT_ALERT: "Prosím vyberte způsob kontaktu.",

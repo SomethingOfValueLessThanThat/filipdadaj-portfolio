@@ -5,6 +5,7 @@ export type Dictionary = {
   NAV_WORK_SETUP: string;
   NAV_WORK_ETHIC: string;
   NAV_PLAYLIST: string;
+  NAV_EASTER_EGGS: string;
   NAV_SCROLL_LEFT: string;
   NAV_SCROLL_RIGHT: string;
 

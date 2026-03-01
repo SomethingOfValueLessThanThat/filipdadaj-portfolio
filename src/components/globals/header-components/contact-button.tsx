@@ -56,7 +56,7 @@ export function ContactButton() {
           <span className="sr-only">{t("CONTACT_SR")}</span>
         </Button>
       </CredenzaTrigger>
-      <CredenzaContent>
+      <CredenzaContent className="gap-6">
         <CredenzaHeader>
           <CredenzaTitle>
             <h3 className="font-bold text-xl text-pretty">
@@ -69,7 +69,7 @@ export function ContactButton() {
             </p>
           </CredenzaDescription>
         </CredenzaHeader>
-        <CredenzaBody className="py-4 sm:pt-0">
+        <CredenzaBody className="sm:pt-0">
           <RadioGroup
             defaultValue="option-one"
             className="flex flex-col w-fit mx-auto sm:ml-0 sm:flex-row justify-center items-start gap-8 sm:gap-5"

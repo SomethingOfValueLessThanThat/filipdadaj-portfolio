@@ -7,6 +7,7 @@ export const en: Dictionary = {
   NAV_WORK_SETUP: "WORK SETUP",
   NAV_WORK_ETHIC: "WORK ETHIC",
   NAV_PLAYLIST: "MY PLAYLIST",
+  NAV_EASTER_EGGS: "EASTER EGGS",
   NAV_SCROLL_LEFT: "Navigation to the left",
   NAV_SCROLL_RIGHT: "Navigation to the right",
 
@@ -26,8 +27,7 @@ export const en: Dictionary = {
   // Contact modal
   CONTACT_SR: "Contact",
   CONTACT_TITLE: "Let's work together \u{1F44B}",
-  CONTACT_DESCRIPTION:
-    "I'm all ears for any kind of communication. Let's dive into a great conversation!",
+  CONTACT_DESCRIPTION: "I'm all ears for any kind of communication.",
   CONTACT_CALL: "Call me",
   CONTACT_TEXT: "Text me",
   CONTACT_EMAIL: "Email me",

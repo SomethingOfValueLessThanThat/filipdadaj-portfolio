@@ -60,6 +60,7 @@ export default function NavTabs() {
     { href: "/work-setup", label: t("NAV_WORK_SETUP"), emoji: "&#129716;" },
     { href: "/work-ethic", label: t("NAV_WORK_ETHIC"), emoji: "&#128170;" },
     { href: "/playlist", label: t("NAV_PLAYLIST"), emoji: "&#127926;" },
+    { href: "/easter-eggs", label: t("NAV_EASTER_EGGS"), emoji: "&#128035;" },
   ];
 
   return (
