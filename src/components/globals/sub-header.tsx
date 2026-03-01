@@ -9,10 +9,14 @@ import profilePicture from "@/assets/images/profile-picture.png";
 // Icons
 import CheckMark from "@/assets/svgs/check-mark";
 
+import { usePathname } from "next/navigation";
 import { useTranslation } from "@/lib/i18n/i18n-context";
 
 export function SubHeader() {
+  const pathname = usePathname();
   const { t } = useTranslation();
+
+  if (pathname === "/528491") return null;
 
   return (
     <div className="flex flex-col gap-8 items-center w-full max-w-xl mx-auto px-5 xs:px-8">

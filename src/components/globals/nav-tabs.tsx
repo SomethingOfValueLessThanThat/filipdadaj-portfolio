@@ -13,7 +13,8 @@ import useEmblaCarousel from "embla-carousel-react";
 
 // Images
 import PinkSketch from "@/assets/svgs/pink-sketch";
-import PinkNote from "@/assets/svgs/pink-note-czech";
+import PinkNoteCzech from "@/assets/svgs/pink-note-czech";
+import PinkNoteEng from "@/assets/svgs/pink-note-eng";
 
 // Globals Componets
 import { Button } from "@/components/ui/button";
@@ -28,7 +29,10 @@ export default function NavTabs() {
   const [canScrollPrev, setCanScrollPrev] = React.useState(false);
   const [canScrollNext, setCanScrollNext] = React.useState(false);
   const pathname = usePathname();
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
+  const PinkNote = locale === "en" ? PinkNoteEng : PinkNoteCzech;
+
+  if (pathname === "/528491") return null;
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollTo(0);
