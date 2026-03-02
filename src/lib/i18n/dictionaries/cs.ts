@@ -107,4 +107,8 @@ export const cs: Dictionary = {
   PROTECTED_PAGE_PLACEHOLDER: "Zadejte heslo",
   PROTECTED_PAGE_ERROR: "Nesprávné heslo.",
   PROTECTED_PAGE_SUBMIT: "Vstoupit",
+
+  // Not found page
+  NOT_FOUND_HEADING: "404 — Stránka nenalezena",
+  NOT_FOUND_LINK: "Zpět domů",
 };

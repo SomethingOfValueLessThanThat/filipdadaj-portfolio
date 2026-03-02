@@ -107,4 +107,8 @@ export const en: Dictionary = {
   PROTECTED_PAGE_PLACEHOLDER: "Enter password",
   PROTECTED_PAGE_ERROR: "Incorrect password.",
   PROTECTED_PAGE_SUBMIT: "Enter",
+
+  // Not found page
+  NOT_FOUND_HEADING: "404 — Page not found",
+  NOT_FOUND_LINK: "Return home",
 };

@@ -80,4 +80,8 @@ export type Dictionary = {
   PROTECTED_PAGE_PLACEHOLDER: string;
   PROTECTED_PAGE_ERROR: string;
   PROTECTED_PAGE_SUBMIT: string;
+
+  // Not found page
+  NOT_FOUND_HEADING: string;
+  NOT_FOUND_LINK: string;
 };

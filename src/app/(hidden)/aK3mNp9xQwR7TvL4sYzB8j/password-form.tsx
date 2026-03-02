@@ -26,7 +26,7 @@ export function PasswordForm({ error }: { error: boolean }) {
           action={authenticate}
           className="flex w-full max-w-xs flex-col gap-3"
         >
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-2">
             <Label htmlFor="password">{t("PROTECTED_PAGE_PASSWORD")}</Label>
             <Input
               id="password"
@@ -35,7 +35,6 @@ export function PasswordForm({ error }: { error: boolean }) {
               placeholder={t("PROTECTED_PAGE_PLACEHOLDER")}
               autoFocus
               autoComplete="current-password"
-              className="rounded-xl"
             />
             {error && (
               <p className="text-xs text-destructive">
