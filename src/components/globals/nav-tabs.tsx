@@ -20,6 +20,9 @@ import PinkNoteEng from "@/assets/svgs/pink-note-eng";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/lib/i18n/i18n-context";
 
+// Lib
+import { HIDDEN_ROUTES } from "@/lib/hidden-routes";
+
 export default function NavTabs() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: false,
@@ -32,7 +35,7 @@ export default function NavTabs() {
   const { t, locale } = useTranslation();
   const PinkNote = locale === "en" ? PinkNoteEng : PinkNoteCzech;
 
-  if (pathname === "/528491") return null;
+  if (HIDDEN_ROUTES.includes(pathname)) return null;
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollTo(0);

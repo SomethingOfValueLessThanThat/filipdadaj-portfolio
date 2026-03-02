@@ -100,4 +100,11 @@ export const cs: Dictionary = {
   // Playlist page
   PLAYLIST_HEADING:
     "Moji go-to umělci když delám něco kreativniho nebo pragramuju",
+
+  // Protected page
+  PROTECTED_PAGE_LABEL: "Tato stránka je chráněna",
+  PROTECTED_PAGE_PASSWORD: "Heslo",
+  PROTECTED_PAGE_PLACEHOLDER: "Zadejte heslo",
+  PROTECTED_PAGE_ERROR: "Nesprávné heslo.",
+  PROTECTED_PAGE_SUBMIT: "Vstoupit",
 };

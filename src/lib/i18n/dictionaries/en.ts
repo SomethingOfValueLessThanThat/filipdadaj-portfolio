@@ -100,4 +100,11 @@ export const en: Dictionary = {
   // Playlist page
   PLAYLIST_HEADING:
     "My go-to artists when I'm doing something creative or programming",
+
+  // Protected page
+  PROTECTED_PAGE_LABEL: "This page is protected",
+  PROTECTED_PAGE_PASSWORD: "Password",
+  PROTECTED_PAGE_PLACEHOLDER: "Enter password",
+  PROTECTED_PAGE_ERROR: "Incorrect password.",
+  PROTECTED_PAGE_SUBMIT: "Enter",
 };

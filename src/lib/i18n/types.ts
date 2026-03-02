@@ -73,4 +73,11 @@ export type Dictionary = {
 
   // Playlist page
   PLAYLIST_HEADING: string;
+
+  // Protected page
+  PROTECTED_PAGE_LABEL: string;
+  PROTECTED_PAGE_PASSWORD: string;
+  PROTECTED_PAGE_PLACEHOLDER: string;
+  PROTECTED_PAGE_ERROR: string;
+  PROTECTED_PAGE_SUBMIT: string;
 };
