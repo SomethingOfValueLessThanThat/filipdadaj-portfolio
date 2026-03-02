@@ -95,7 +95,7 @@ export const en: Dictionary = {
   WORK_ETHIC_BODY_2:
     "I try to write clean code and follow the best practices of the given project, while keeping it readable for others who might work on it after me.",
   WORK_ETHIC_BODY_3:
-    "As inspiration for this page I used Herohero and the Spotlight template by Tailwind UI. I tried not to write too much, because nobody reads long texts. If you like it, feel free to get inspired, but don't copy the whole thing.. thanks",
+    "As inspiration for this page I used Herohero and the Spotlight template by Tailwind UI. If you like it, feel free to get inspired, but don't copy the whole thing.. thanks",
 
   // Playlist page
   PLAYLIST_HEADING:

@@ -95,7 +95,7 @@ export const cs: Dictionary = {
   WORK_ETHIC_BODY_2:
     "Kód se snažím psát čistě a dodržovat best practices danýho projektu, zároveň tak, aby to bylo čitelné i pro ostatní lidi, když na tom bude pracovat někdo jinej po mně.",
   WORK_ETHIC_BODY_3:
-    "Jako inspiraci na tuhle stránku jsem použil Herohero a Spotlight template od Tailwindui. Snažil jsem se moc nerozepisovat, páč dlouhé texty nikdo nečte. Pokud se ti to líbí, klidně se inspiruj, ale neokopči to celý.. díky",
+    "Jako inspiraci na tuhle stránku jsem použil Herohero a Spotlight template od Tailwindui. Pokud se ti to líbí, klidně se inspiruj, ale neokopči to celý.. díky",
 
   // Playlist page
   PLAYLIST_HEADING:
