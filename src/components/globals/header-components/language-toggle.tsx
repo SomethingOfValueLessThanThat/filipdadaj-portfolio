@@ -2,6 +2,7 @@
 
 import { Languages } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/i18n-context";
+import { useEasterEgg } from "@/components/easter-eggs/easter-egg-experimental-theme";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -12,6 +13,7 @@ import {
 
 export function LanguageToggle() {
   const { locale, setLocale } = useTranslation();
+  const { experimentalUnlocked } = useEasterEgg();
 
   return (
     <div className="ml-auto">
@@ -34,6 +36,11 @@ export function LanguageToggle() {
           <DropdownMenuItem onClick={() => setLocale("cs")}>
             Čeština
           </DropdownMenuItem>
+          {experimentalUnlocked && (
+            <DropdownMenuItem onClick={() => setLocale("experimental")}>
+              Ж∆§ñ0Я
+            </DropdownMenuItem>
+          )}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

@@ -11,11 +11,13 @@ import CheckMark from "@/assets/svgs/check-mark";
 
 import { usePathname } from "next/navigation";
 import { useTranslation } from "@/lib/i18n/i18n-context";
+import { useEasterEgg, registerProfileClick } from "@/components/easter-eggs/easter-egg-experimental-theme";
 import { HIDDEN_ROUTES } from "@/lib/hidden-routes";
 
 export function SubHeader() {
   const pathname = usePathname();
   const { t } = useTranslation();
+  const { justUnlocked } = useEasterEgg();
 
   if (HIDDEN_ROUTES.includes(pathname)) return null;
 
@@ -26,7 +28,8 @@ export function SubHeader() {
         alt="profile picture"
         width={96}
         height={96}
-        className="rounded-4xl pointer-events-none"
+        className={`rounded-4xl cursor-pointer select-none${justUnlocked ? " animate-unlock" : ""}`}
+        onClick={registerProfileClick}
       />
       <div className="inline-flex items-center gap-2">
         <h1 className="font-bold text-[32px] tracking-tight">Filip Dadaj</h1>

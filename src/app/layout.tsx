@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 // Styles CSS
 import "@/styles/globals.css";
 import "@/styles/animated-path.css";
+import "@/styles/experimental-theme.css";
 
 // Utility Functions
 import { cn } from "@/lib/utils";
@@ -23,6 +24,7 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 import { VaulDrawerWrapper } from "@/components/layout/vaul-drawer-wrapper";
 import { Toaster } from "@/components/ui/toaster";
 import { LocaleProvider } from "@/lib/i18n/i18n-context";
+import { EasterEggs } from "@/components/easter-eggs/easter-eggs-provider";
 
 export const metadata: Metadata = {
   title: "Filip Dadaj - Portfolio",
@@ -48,6 +50,7 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="light"
           enableSystem
+          themes={["light", "dark", "experimental"]}
           disableTransitionOnChange
         >
           <LocaleProvider>
@@ -63,6 +66,7 @@ export default function RootLayout({
               <Footer />
             </VaulDrawerWrapper>
             <Toaster />
+            <EasterEggs />
           </LocaleProvider>
         </ThemeProvider>
       </body>

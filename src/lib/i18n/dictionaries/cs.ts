@@ -23,6 +23,7 @@ export const cs: Dictionary = {
   THEME_DARK: "Tmavý",
   THEME_SYSTEM: "Systém",
   THEME_SR: "Přepnout motiv",
+  THEME_EXPERIMENTAL: "Experimentální",
 
   // Contact modal
   CONTACT_SR: "Kontakt",
@@ -111,4 +112,8 @@ export const cs: Dictionary = {
   // Not found page
   NOT_FOUND_HEADING: "404 — Stránka nenalezena",
   NOT_FOUND_LINK: "Zpět domů",
+
+  // Easter egg: experimental theme
+  EASTER_EGG_EXPERIMENTAL_TITLE: "Easter egg odemčen!",
+  EASTER_EGG_EXPERIMENTAL_DESC: "Experimentální motiv je nyní dostupný v nabídce motivů.",
 };

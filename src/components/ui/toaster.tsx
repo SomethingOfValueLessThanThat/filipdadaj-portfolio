@@ -19,7 +19,7 @@ export function Toaster() {
       {toasts.map(function ({ id, title, description, action, ...props }) {
         return (
           <Toast key={id} {...props}>
-            <ShieldAlert size={48} className="stroke-red-500" />
+            <ShieldAlert size={48} className="stroke-destructive" />
             <div className="grid gap-1">
               {title && (
                 <ToastTitle className="font-bold text-lg text-pretty">

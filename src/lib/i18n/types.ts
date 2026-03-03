@@ -21,6 +21,7 @@ export type Dictionary = {
   THEME_DARK: string;
   THEME_SYSTEM: string;
   THEME_SR: string;
+  THEME_EXPERIMENTAL: string;
 
   // Contact modal
   CONTACT_SR: string;
@@ -84,4 +85,8 @@ export type Dictionary = {
   // Not found page
   NOT_FOUND_HEADING: string;
   NOT_FOUND_LINK: string;
+
+  // Easter egg: experimental theme
+  EASTER_EGG_EXPERIMENTAL_TITLE: string;
+  EASTER_EGG_EXPERIMENTAL_DESC: string;
 };

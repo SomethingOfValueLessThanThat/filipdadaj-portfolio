@@ -1,0 +1,83 @@
+.experimental {
+  --background: hsl(300 100% 55%);
+  --foreground: hsl(120 100% 40%);
+  --card: hsl(25 100% 52%);
+  --card-foreground: hsl(195 100% 50%);
+  --popover: hsl(55 100% 50%);
+  --popover-foreground: hsl(270 100% 25%);
+  --primary: hsl(60 100% 48%);
+  --primary-foreground: hsl(270 100% 20%);
+  --secondary: hsl(180 100% 45%);
+  --secondary-foreground: hsl(0 100% 35%);
+  --muted: hsl(280 100% 60%);
+  --muted-foreground: hsl(30 100% 55%);
+  --accent: hsl(200 100% 50%);
+  --accent-foreground: hsl(320 100% 55%);
+  --destructive: hsl(120 100% 42%);
+  --destructive-foreground: hsl(330 100% 55%);
+  --border: hsl(55 100% 52%);
+  --input: hsl(170 100% 42%);
+  --ring: hsl(25 100% 52%);
+}
+
+.experimental button {
+  background: linear-gradient(
+    135deg,
+    hsl(55 100% 50%),
+    hsl(120 100% 45%),
+    hsl(195 100% 50%)
+  ) !important;
+  color: hsl(300 100% 30%) !important;
+  border: 2px solid hsl(300 100% 55%) !important;
+  box-shadow: none !important;
+}
+
+.experimental button:hover {
+  background: linear-gradient(
+    135deg,
+    hsl(300 100% 55%),
+    hsl(25 100% 52%),
+    hsl(55 100% 50%)
+  ) !important;
+  color: hsl(120 100% 30%) !important;
+  box-shadow: none !important;
+}
+
+@keyframes unlock-burst {
+  0% {
+    transform: scale(1) rotate(0deg);
+    filter: none;
+  }
+  15% {
+    transform: scale(1.35) rotate(-12deg);
+    filter: drop-shadow(0 0 16px hsl(300 100% 60%));
+  }
+  30% {
+    transform: scale(1.5) rotate(14deg);
+    filter: drop-shadow(0 0 24px hsl(55 100% 50%));
+  }
+  45% {
+    transform: scale(1.35) rotate(-10deg);
+    filter: drop-shadow(0 0 20px hsl(120 100% 45%));
+  }
+  60% {
+    transform: scale(1.4) rotate(8deg);
+    filter: drop-shadow(0 0 18px hsl(200 100% 50%));
+  }
+  75% {
+    transform: scale(1.2) rotate(-6deg);
+    filter: drop-shadow(0 0 14px hsl(25 100% 55%));
+  }
+  90% {
+    transform: scale(1.05) rotate(3deg);
+    filter: drop-shadow(0 0 8px hsl(300 100% 60%));
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: none;
+  }
+}
+
+.animate-unlock {
+  animation: unlock-burst 1.2s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}

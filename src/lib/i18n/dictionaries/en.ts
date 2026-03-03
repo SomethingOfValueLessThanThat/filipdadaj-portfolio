@@ -23,6 +23,7 @@ export const en: Dictionary = {
   THEME_DARK: "Dark",
   THEME_SYSTEM: "System",
   THEME_SR: "Toggle theme",
+  THEME_EXPERIMENTAL: "Experimental",
 
   // Contact modal
   CONTACT_SR: "Contact",
@@ -111,4 +112,8 @@ export const en: Dictionary = {
   // Not found page
   NOT_FOUND_HEADING: "404 — Page not found",
   NOT_FOUND_LINK: "Return home",
+
+  // Easter egg: experimental theme
+  EASTER_EGG_EXPERIMENTAL_TITLE: "Easter egg unlocked!",
+  EASTER_EGG_EXPERIMENTAL_DESC: "Experimental theme is now available in the theme menu.",
 };
