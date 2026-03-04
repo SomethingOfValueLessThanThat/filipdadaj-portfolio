@@ -4,11 +4,10 @@ import { createContext, useContext, useState, useEffect } from "react";
 import type { Dictionary } from "./types";
 import { cs } from "./dictionaries/cs";
 import { en } from "./dictionaries/en";
-import { experimental } from "./dictionaries/experimental";
 
-type Locale = "cs" | "en" | "experimental";
+type Locale = "cs" | "en";
 
-const dictionaries: Record<Locale, Dictionary> = { cs, en, experimental };
+const dictionaries: Record<Locale, Dictionary> = { cs, en };
 
 interface I18nContextValue {
   locale: Locale;
@@ -23,7 +22,7 @@ export function LocaleProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem("locale") as Locale | null;
-    if (stored === "cs" || stored === "en" || stored === "experimental") {
+    if (stored === "cs" || stored === "en") {
       setLocaleState(stored);
     }
   }, []);
