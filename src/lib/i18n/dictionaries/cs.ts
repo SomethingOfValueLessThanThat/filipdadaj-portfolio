@@ -38,7 +38,7 @@ export const cs: Dictionary = {
 
   // Footer
   FOOTER_COPYRIGHT:
-    "© 2026. Klidně se inspiruj a vytvoř si vlastní projekty, ale přímé kopírování obsahu není povoleno.",
+    "© 2026. Klidně se inspiruj a vytvoř si vlastní projekt, ale přímé kopírování obsahu není povoleno.",
 
   // Home page
   HOME_HEADING:
@@ -115,5 +115,6 @@ export const cs: Dictionary = {
 
   // Easter egg: experimental theme
   EASTER_EGG_EXPERIMENTAL_TITLE: "Easter egg odemčen!",
-  EASTER_EGG_EXPERIMENTAL_DESC: "Experimentální motiv je nyní dostupný v nabídce motivů.",
+  EASTER_EGG_EXPERIMENTAL_DESC:
+    "Experimentální motiv je nyní dostupný v nabídce motivů.",
 };

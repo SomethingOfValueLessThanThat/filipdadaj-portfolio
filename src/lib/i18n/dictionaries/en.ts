@@ -38,7 +38,7 @@ export const en: Dictionary = {
 
   // Footer
   FOOTER_COPYRIGHT:
-    "© 2026. You're welcome to draw inspiration and customize your own projects, but direct copying of content is not permitted.",
+    "© 2026. You're welcome to draw inspiration and customize your own project, but direct copying of content is not permitted.",
 
   // Home page
   HOME_HEADING:
@@ -115,5 +115,6 @@ export const en: Dictionary = {
 
   // Easter egg: experimental theme
   EASTER_EGG_EXPERIMENTAL_TITLE: "Easter egg unlocked!",
-  EASTER_EGG_EXPERIMENTAL_DESC: "Experimental theme is now available in the theme menu.",
+  EASTER_EGG_EXPERIMENTAL_DESC:
+    "Experimental theme is now available in the theme menu.",
 };
